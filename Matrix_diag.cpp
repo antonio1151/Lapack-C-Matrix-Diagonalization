@@ -39,8 +39,6 @@ extern "C" {
 
 
 class diagonalization{
-    char m_jbvl='N';
-    int m_ldvl=1;
     vector<vec> m_b;
     vector<vector <comp>> m_bc;
     int ind; //flag for determining the nature of the matrix to be diagonalized 1 for real and  2 for complex
@@ -311,8 +309,8 @@ class diagonalization{
     char 	JOBVR=jobzz;
     double* WR=new double [n];
     double*	WI=new double [n];
-    int LDVL=n;
-    double* VL=new double [n*n];
+    int LDVL=m_ldvl;
+    double* VL;
     int LDVR=n;
     double*	VR=new double [n*n];
     int LWORK=6*n;
