@@ -309,7 +309,7 @@ class diagonalization{
     char 	JOBVR=jobzz;
     double* WR=new double [n];
     double*	WI=new double [n];
-    int LDVL=m_ldvl;
+    int LDVL=1;
     double* VL;
     int LDVR=n;
     double*	VR=new double [n*n];
