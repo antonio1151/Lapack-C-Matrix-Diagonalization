@@ -17,7 +17,7 @@ int main(){
     cout << "--- Eigenvalues---" << endl;
     int i=1;
     for (comp t:v){
-        cout<<"Eigenvalue\t"<<i<<":"<<t<<endl;
+        cout<<"Eigenvalue\t"<<i<<":\t"<<t<<endl;
         i++;
     }
     vector <vector <comp>> u=di.data_complex.eigenvectors;
@@ -43,7 +43,7 @@ int main(){
     cout << "--- Eigenvalues---" << endl;
     i=1;
     for (double ev:eigv_r){
-        cout<<"Eigenvalue\t"<<i<<":"<<ev<<endl;
+        cout<<"Eigenvalue\t"<<i<<":\t"<<ev<<endl;
         i++;
     }
     cout << "--- Eigenvectors---" << endl;
@@ -74,7 +74,7 @@ int main(){
     cout << "--- Eigenvalues---" << endl;
     i=1;
     for (comp ev:eigv_nonr){
-        cout<<"Eigenvalue\t"<<i<<":"<<ev<<endl;
+        cout<<"Eigenvalue\t"<<i<<":\t"<<ev<<endl;
         i++;
     }
     cout << "--- Eigenvectors---" << endl;
